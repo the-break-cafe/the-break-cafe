@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Break — Café & Glaces. Coffee, matcha, fresh juices and homemade desserts.">
+  <meta name="theme-color" content="#382517">
+  <title>The Break — Café & Glaces</title>
+  <link rel="icon" href="assets/logo.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">GOOD COFFEE · GOOD MOOD · TAKE A BREAK</div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="The Break home">
+      <img src="assets/logo.jpg" alt="The Break Café & Glaces logo">
+      <span>THE <b>BREAK</b></span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#favorites">Favorites</a>
+      <a href="#story">Our Story</a>
+      <a href="#visit">Find Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME TO</p>
+        <h1>THE <span>BREAK</span></h1>
+        <p class="script">Your break, your way.</p>
+        <p class="hero-copy">Coffee, matcha, fresh juices and homemade cakes — made with love, just for you.</p>
+        <div class="hero-buttons">
+          <a class="btn dark" href="#menu">View Menu</a>
+          <a class="btn outline" href="#visit">Find Us</a>
+          <button class="story-btn" id="storyBtn"><span>▶</span> Our Story</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/Gemini_Generated_Image_q0ouuyq0ouuyq0ou.jpeg" alt="Latte and coffee beans">
+      </div>
+    </section>
+
+    <section class="categories section">
+      <div class="section-heading">
+        <p class="eyebrow">EXPLORE</p>
+        <h2>Something for every break</h2>
+        <p>Pick your mood and discover your favorite.</p>
+      </div>
+      <div class="category-grid">
+        <button data-filter="coffee"><span>☕</span> Coffee</button>
+        <button data-filter="iced"><span>🥤</span> Iced Coffee</button>
+        <button data-filter="milkshake"><span>🍨</span> Milkshakes</button>
+        <button data-filter="hot"><span>☕</span> Hot Chocolate</button>
+        <button data-filter="matcha"><span>🍵</span> Matcha</button>
+        <button data-filter="mojito"><span>🍋</span> Mojitos</button>
+        <button data-filter="juice"><span>🍊</span> Juices</button>
+        <button data-filter="cheesecake"><span>🍰</span> Cheesecakes</button>
+        <button data-filter="gelato"><span>🍦</span> Gelatos</button>
+      </div>
+    </section>
+
+    <section class="favorites section" id="favorites">
+      <div class="section-heading split">
+        <div>
+          <p class="eyebrow">MOST LOVED</p>
+          <h2>Our favorites</h2>
+        </div>
+        <a class="text-link" href="#menu">See full menu →</a>
+      </div>
+      <div class="favorite-grid">
+        <article class="favorite-card">
+          <img src="assets/dragon-fruit.jpg" alt="Iced caramel latte">
+          <div><p>Dragon fruit smoothie</p><strong>45 Dh</strong></div>
+        </article>
+        <article class="favorite-card">
+          <img src="assets/tiramissu-fram.jpg" alt="Pistachio cheesecake">
+          <div><p>Tiramisu raspberry</p><strong>30 Dh</strong></div>
+        </article>
+        <article class="favorite-card">
+          <img src="assets/mojito-1.jpg" alt="Green matcha latte">
+          <div><p>Mojito</p><strong>30 Dh</strong></div>
+        </article>
+        <article class="favorite-card">
+          <img src="assets/milk-shake-oreo.jpg" alt="Oreo milkshake">
+          <div><p>Oreo Milkshake</p><strong>35 Dh</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="section-heading">
+        <p class="eyebrow">THE MENU</p>
+        <h2>Made for your break</h2>
+        <p>Tap a category or add something straight to your order.</p>
+      </div>
+      <div class="menu-toolbar">
+        <div class="filters" role="tablist" aria-label="Menu categories">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="coffee">Coffee</button>
+          <button class="filter" data-filter="iced">Iced Coffee</button>
+          <button class="filter" data-filter="milkshake">Milkshakes</button>
+          <button class="filter" data-filter="hot">Hot Chocolate</button>
+          <button class="filter" data-filter="matcha">Matcha</button>
+          <button class="filter" data-filter="mojito">Mojitos</button>
+          <button class="filter" data-filter="juice">Juices</button>
+          <button class="filter" data-filter="special">Specialties</button>
+          <button class="filter" data-filter="cheesecake">Cheesecakes</button>
+          <button class="filter" data-filter="gelato">Gelatos</button>
+        </div>
+        <div class="search-wrap">
+          <input id="menuSearch" type="search" placeholder="Search the menu…" aria-label="Search the menu">
+        </div>
+      </div>
+      <div class="menu-grid" id="menuGrid"></div>
+    </section>
+
+    <section class="story section" id="story">
+      <div class="story-image"><img src="assets/interior.jpg" alt="Warm The Break café interior"></div>
+      <div class="story-copy">
+        <p class="eyebrow">OUR STORY</p>
+        <h2>A little pause can change your whole day.</h2>
+        <p>At The Break, we believe coffee is more than a drink. It is a small ritual: a good cup, something sweet, a conversation, or a quiet moment for yourself.</p>
+        <p>Our menu brings together classic coffee, refreshing matcha, homemade-style desserts and fresh juices in a warm, relaxed space.</p>
+        <a class="btn dark" href="#visit">Come take a break</a>
+      </div>
+    </section>
+
+    <section class="gallery section">
+      <div class="section-heading">
+        <p class="eyebrow">FROM THE COUNTER</p>
+        <h2>Freshly made, beautifully served</h2>
+      </div>
+      <div class="gallery-grid">
+        <img src="assets/tiramissu-fram.jpg" alt="Tiramisu dessert">
+        <img src="assets/coffee-pour.jpg" alt="Coffee being poured">
+        <img src="assets/cookies.jpg" alt="Chocolate chip cookies">
+      </div>
+    </section>
+
+    <section class="visit section" id="visit">
+      <div class="visit-card">
+        <div>
+          <p class="eyebrow">COME SAY HI</p>
+          <h2>Find your favorite corner.</h2>
+          <p>Open every day for coffee, desserts, fresh juices and good conversations.</p>
+        </div>
+        <div class="visit-details">
+          <p><b>📍 Address</b><br>Rabat, Morocco</p>
+          <p><b>🕐 Hours</b><br>Every day · 03:00pm — 00:00am</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <img src="assets/logo.jpg" alt="">
+      <h3>THE BREAK</h3>
+      <p>Café · Glaces · Good mood</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="#menu">Menu</a><a href="#favorites">Favorites</a><a href="#story">Our Story</a>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <a href="https://l.instagram.com/?u=https%3A%2F%2Fmaps.app.goo.gl%2F66HHkJBgVaJCCP4C6%3Fg_st%3Dic%26utm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafqS_Ga8Ytf--1N8gc93b30ZG-X44EqDXU8YDO2yuVV9_ZNRTOS1AY70CLePA_aem_0bX_67_IN9iMWQPVLxkq0A&e=AUC8aAzUqBLPqHyzTMK141QSHkT7O2SABlvLXFbWkmQoJoZjukySS11X5UawFl_0PFbd4xjHYPCs8uTcqLSsRBm7TK2qBgI9fdZO_ckDgK6TjY1I9OHpRc3LipvV6w9NclQKIxH1SMtK">Find Us</a>
+      <a href="" class="call">Call us</a>
+    </div>
+    <div>
+      <h4>Follow</h4>
+      <a href="https://www.instagram.com/thebreak.off/">Instagram</a>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> The Break. All rights reserved.</div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="modal" id="storyModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="modal-close">×</button>
+    <p class="eyebrow">OUR STORY</p>
+    <h2>Take a break. You deserve it.</h2>
+    <p>From the first coffee of the morning to a late-night cheesecake, The Break is designed around one simple idea: slow down, enjoy the moment, and leave with a better mood.</p>
+    <a class="btn dark Explore" href="#menu">Explore the menu</a>
+  </div>
+
+  <div class="modal" id="reserveModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="modal-close">×</button>
+    <p class="eyebrow">RESERVATION</p>
+    <h2>Book your break.</h2>
+    <form id="reservationForm">
+      <input required placeholder="Your name">
+      <input required type="date" id="resDate">
+      <input required type="time">
+      <input required type="number" min="1" max="12" placeholder="Guests">
+      <button class="btn dark full" type="submit">Request reservation</button>
+    </form>
+    <p class="form-note">This demo form confirms the request on-screen; connect it to your backend/email service for real bookings.</p>
+  </div><div class="toast" id="toast"></div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
