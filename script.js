@@ -1,95 +1,264 @@
 const products = [
-  ["Espresso","coffee",9,"assets/espresso.jpg","Short, rich and classic."],
-  ["Double Espresso","coffee",14,"assets/double-espresso.jpg","Double shot for extra energy."],
-  ["Americano","coffee",14,"assets/americano.jpg","Espresso with hot water."],
-  ["Café Latte","coffee",15,"assets/cafe-latte.jpg","Smooth espresso with milk."],
-  ["Cappuccino","coffee",18,"assets/cafe-latte.jpg","Espresso, milk, foam and cacao powder."],
-  ["Cappuccino Viennois","coffee",24,"assets/cafe-latte.jpg","Espresso, milk, foam, cacao powdern and Whipped cream."],
-  ["affogato","coffee",30,"assets/cafe-latte.jpg","single espresso with a scoop of ice creem vanille."],
-  ["Break coffe(bresilianno)","coffee",30,"assets/cafe-latte.jpg","Double Espresso,nuttela and nestle."],
-  ["corttado","coffee",25,"assets/cafe-latte.jpg","espresso with Evaporated milk."],
-  ["Mocha Latte","coffee",25,"assets/mocha-latte.jpg","Chocolate, espresso and milk."],
-  ["Black Tea","coffee",18,"assets/mocha-latte.jpg","lipton and water."],
-    ["Espresso","coffee",9,"assets/espresso.jpg","Short, rich and classic."],
-  ["Double Espresso","coffee",14,"assets/double-espresso.jpg","Double shot for extra energy."],
-  ["Americano","coffee",14,"assets/americano.jpg","Espresso with hot water."],
-  ["Café Latte","coffee",15,"assets/cafe-latte.jpg","Smooth espresso with milk."],
-  ["Cappuccino","coffee",18,"assets/cafe-latte.jpg","Espresso, milk, foam and cacao powder."],
-  ["Cappuccino Viennois","coffee",24,"assets/cafe-latte.jpg","Espresso, milk, foam, cacao powdern and Whipped cream."],
-  ["affogato","coffee",30,"assets/cafe-latte.jpg","single espresso with a scoop of ice creem vanille."],
-  ["Break coffee(bresilianno)","coffee",30,"assets/cafe-latte.jpg","Double Espresso,nuttela and nestle."],
-  ["corttado","coffee",25,"assets/cafe-latte.jpg","espresso with Evaporated milk."],
-  ["Mocha Latte","coffee",25,"assets/mocha-latte.jpg","Chocolate, espresso and milk."],
-  ["Black Tea","coffee",18,"assets/mocha-latte.jpg","lipton and water."],
-  ["Black Tea with milk","coffee",20,"assets/mocha-latte.jpg","lipton and Milk."],
+
+  // ==================== CAFÉS CHAUDS ====================
+
+  ["Espresso", "coffee", 10, "assets/espresso.jpg",
+    "Un espresso court, riche et classique."],
+
+  ["Double Espresso", "coffee", 14, "assets/double-espresso.jpg",
+    "Deux doses d'espresso pour un goût plus intense."],
+
+  ["Americano", "coffee", 14, "assets/americano.jpg",
+    "Espresso allongé avec de l'eau chaude."],
+
+  ["Latte", "coffee", 15, "assets/cafe-latte.jpg",
+    "Espresso doux accompagné de lait chaud."],
+
+  ["Cappuccino", "coffee", 18, "assets/cafe-latte.jpg",
+    "Espresso, lait, mousse de lait et cacao."],
+
+  ["Cappuccino Viennois", "coffee", 22, "assets/cafe-latte.jpg",
+    "Espresso, lait, mousse de lait, cacao et crème chantilly."],
+
+  ["Cortado", "coffee", 25, "assets/cafe-latte.jpg",
+    "Espresso accompagné de lait évaporé."],
+
+  ["Affogato", "coffee", 30, "assets/cafe-latte.jpg",
+    "Espresso accompagné d'une boule de glace à la vanille."],
+
+  ["Brésiliano", "coffee", 27, "assets/cafe-latte.jpg",
+    "Double espresso, Nutella et lait Nestlé."],
 
 
-  ["Spanish Latte","iced",25,"assets/featured-caramel.jpg","Creamy iced latte with a sweet finish."],
-  ["Iced Latte","iced",26,"assets/featured-caramel.jpg","Cold latte with rome of your choice."],
-  ["Iced Tea","iced",30,"assets/featured-caramel.jpg","Lipton, sparkling water and lemon."],
+  // ==================== CAFÉS GLACÉS ====================
+
+  ["Caramel Macchiato", "iceCoffee", 23, "assets/cafe-latte.jpg",
+    "Espresso glacé, lait et caramel."],
+
+  ["Pistachio Latte", "iceCoffee", 30, "assets/cafe-latte.jpg",
+    "Latte glacé à la pistache."],
+
+  ["Spanish Latte", "iceCoffee", 25, "assets/cafe-latte.jpg",
+    "Latte glacé crémeux avec une touche sucrée."],
+
+  ["Tiramisu Latte", "iceCoffee", 28, "assets/cafe-latte.jpg",
+    "Latte glacé inspiré du tiramisu."],
+
+  ["Matcha Latte", "iceCoffee", 30, "assets/cafe-latte.jpg",
+    "Latte glacé au matcha crémeux."],
+
+  ["Nutella Latte", "iceCoffee", 25, "assets/cafe-latte.jpg",
+    "Latte glacé gourmand au Nutella."],
 
 
-  ["Chocolate Milkshake","milkshake",35,"assets/chocolate-milkshake.jpg","Rich chocolate shake."],
-  ["Caramel Milkshake","milkshake",35,"assets/caramel-milkshake.jpg","Creamy caramel favorite."],
-  ["Vanilla Milkshake","milkshake",35,"assets/vanilla-milkshake.jpg","Classic vanilla shake."],
-  ["Strawberry Milkshake","milkshake",35,"assets/strawberry-milkshake.jpg","Sweet strawberry blend."],
-  ["Oreo Milkshake","milkshake",35,"assets/milk-shake-oreo.jpg","Oreo, cream and chocolate."],
+  // ==================== BOISSONS CHAUDES ====================
 
-  ["Chocolat Chaud","hot",18,"assets/chocolate-milkshake.jpg","Hot chocolate, smooth and cozy."],
-  ["Chocolat Fondue","hot",28,"assets/chocolate-milkshake.jpg","Warm chocolate indulgence."],
+  ["Thé à la menthe", "hotTea", 4, "assets/mocha-latte.jpg",
+    "Thé à la menthe traditionnel."],
 
-  ["Green Matcha Latte","matcha",25,"assets/featured-matcha.jpg","Creamy matcha latte."],
-  ["Iced Matcha Latte","matcha",30,"assets/iced-matcha.jpg","Refreshing iced matcha."],
+  ["Tisanes", "hotTea", 25, "assets/mocha-latte.jpg",
+    "Infusion chaude et parfumée."],
 
-  ["Virgin Mojito","mojito",20,"assets/mojito-1.jpg","Mint, lime and sparkling freshness."],
-  ["Tropical Mojito","mojito",30,"assets/virgin-mojito.jpg","Fruity tropical refreshment."],
-  ["Break Mojito(Red Mauve)","mojito",35,"assets/virgin-mojito.jpg","Berry-forward mojito."],
-  ["Blue Mojito","mojito",30,"assets/virgin-mojito.jpg","Bright and refreshing."],
+  ["Chocolat Chaud", "hot", 22, "assets/chocolate-milkshake.jpg",
+    "Chocolat chaud, doux et réconfortant."],
 
-  ["Jus d'Orange","juice",18,"assets/orange-juice.jpg","Fresh orange juice."],
-  ["Jus de Fraise","juice",25,"assets/strawberry-juice.jpg","Fresh strawberry juice."],
-  ["Jus de Banane","juice",20,"assets/banana-juice.jpg","Creamy banana blend."],
-  ["Jus de Mangue","juice",25,"assets/mango-juice.jpg","Sweet mango juice."],
-  ["Jus d'Avocat","juice",30,"assets/avocado-juice.jpg","Avocado smoothie-style juice."],
-  ["Pina Colada","juice",30,"assets/virgin-mojito.jpg","Tropical pineapple & coconut."],
-  ["Jus de Citron","juice",18,"assets/orange-juice.jpg","Bright fresh lemon."],
-  ["Jus Citron Gingembre","juice",20,"assets/orange-juice.jpg","Lemon with a ginger kick."],
-  ["Dragon fruit smoothie","juice",45,"assets/dragon-fruit.jpg","Dragon fruit, banana, mangue and (Milk or orange juice)"],
-  ["Strawberry smoothie","juice",45,"assets/smothie-1.jpg","Strawberry, banana, mangue and (Milk or orange juice)"],
-  ["pineapple smoothie","juice",45,"assets/orange-juice.jpg","pineapple, banana, mangue and (Milk or orange juice)"],
-  ["Avocado smoothie","juice",45,"assets/orange-juice.jpg","Avocado, banana, mangue and (Milk or orange juice)"],
-  ["Break smoothie smoothie","juice",55,"assets/orange-juice.jpg","Dragon fruit, banana, mangue, Avocado, pineapple  and (Milk or orange juice)"],
+  ["Chocolat Fondue", "hot", 28, "assets/chocolate-milkshake.jpg",
+    "Délicieuse fondue au chocolat chaud."],
 
 
-  ["Tiramisu Classique","special",30,"assets/tiramisu.jpg","Classic coffee dessert."],
-  ["Tiramisu Lotus","special",30,"assets/tiramissu-lotus.jpg","Lotus-inspired tiramisu."],
-  ["Tiramisu raspberry","special",30,"assets/tiramissu-fram.jpg","raspberry tiramisu."],
-  ["Tiramisu Mangue","special",30,"assets/tiramisu.jpg","Mango twist."],
-  ["Tiramisu Pistache","special",35,"assets/cheesecake-pistachio.jpg","Pistachio signature dessert."],
+  // ==================== THÉS GLACÉS ====================
 
-  ["Oreo Cheesecake","cheesecake",20,"assets/cheesecake-oreo.jpg","Creamy Oreo cheesecake."],
-  ["Lotus Cheesecake","cheesecake",20,"assets/cheesecake-lotus.jpg","Lotus biscuit cheesecake."],
-  ["Pistache Cheesecake","cheesecake",25,"assets/cheesecake-pistachio.jpg","Pistachio cheesecake."],
-  ["Fraise Cheesecake","cheesecake",20,"assets/cheesecake-fraise.jpg","Strawberry cheesecake."],
-  ["Mangue Cheesecake","cheesecake",20,"assets/cheesecake-mango.jpg","Mango cheesecake."],
+  ["Thé à la menthe", "icedTea", 28, "assets/featured-caramel.jpg",
+    "Thé à la menthe glacé."],
 
-  ["Gelato Cookies","gelato",12,"assets/orange-juice.jpg","Starting from one scoop."],
-  ["Gelato Pineapple","gelato",12,"assets/strawberry-juice.jpg","Starting from one scoop."],
-  ["Gelato Chocolate ","gelato",12,"assets/banana-juice.jpg","Starting from one scoop."],
-  ["Gelato Oreo","gelato",12,"assets/mango-juice.jpg","Starting from one scoop."],
-  ["Gelato Coffee","gelato",12,"assets/avocado-juice.jpg","Starting from one scoop."],
-  ["Gelato Caramel","gelato",12,"assets/virgin-mojito.jpg","Starting from one scoop."],
-  ["Gelato Strawberry","gelato",12,"assets/orange-juice.jpg","Starting from one scoop."],
-  ["Gelato Woodenfruit","gelato",12,"assets/orange-juice.jpg","Starting from one scoop."],
-  ["Gelato Hazelnut","gelato",12,"assets/orange-juice.jpg","Starting from one scoop."],
-  ["Gelato Lemon","gelato",12,"assets/orange-juice.jpg","Starting from one scoop."],
-  ["Gelato redberry","gelato",12,"assets/orange-juice.jpg","Starting from one scoop."],
-  ["Gelato Cherry Mania","gelato",12,"assets/orange-juice.jpg","Starting from one scoop."],
-  ["Gelato Mango","gelato",12,"assets/orange-juice.jpg","Starting from one scoop."],
-  ["Gelato Chewing Gum","gelato",12,"assets/orange-juice.jpg","Starting from one scoop."],
-  ["Gelato Vanilla","gelato",12,"assets/orange-juice.jpg","Starting from one scoop."],
-  ["Gelato Nouga","gelato",12,"assets/orange-juice.jpg","Starting from one scoop."],
+  ["Thé à la menthe", "icedTea", 30, "assets/featured-caramel.jpg",
+    "Grande portion de thé à la menthe glacé."],
 
+
+  // ==================== JUS DE FRUITS ====================
+
+  ["Jus d'Orange", "juice", 18, "assets/orange-juice.jpg",
+    "Jus d'orange frais."],
+
+  ["Jus de Fraise", "juice", 25, "assets/strawberry-juice.jpg",
+    "Jus frais à la fraise."],
+
+  ["Jus de Banane", "juice", 20, "assets/banana-juice.jpg",
+    "Mélange crémeux à la banane."],
+
+  ["Jus de Mangue", "juice", 25, "assets/mango-juice.jpg",
+    "Jus de mangue doux et fruité."],
+
+  ["Jus d'Avocat", "juice", 30, "assets/avocado-juice.jpg",
+    "Boisson crémeuse à l'avocat."],
+
+  ["Jus de Citron", "juice", 18, "assets/orange-juice.jpg",
+    "Jus de citron frais et acidulé."],
+
+  ["Jus de Citron Gingembre", "juice", 20, "assets/orange-juice.jpg",
+    "Jus de citron avec une touche de gingembre."],
+
+
+  // ==================== MILKSHAKES ====================
+
+  ["Cherry", "milkshake", 35, "assets/strawberry-milkshake.jpg",
+    "Milkshake gourmand à la cerise."],
+
+  ["Vanille", "milkshake", 30, "assets/vanilla-milkshake.jpg",
+    "Milkshake classique à la vanille."],
+
+  ["Chocolat", "milkshake", 30, "assets/chocolate-milkshake.jpg",
+    "Milkshake riche au chocolat."],
+
+  ["Fraise", "milkshake", 30, "assets/strawberry-milkshake.jpg",
+    "Milkshake doux à la fraise."],
+
+  ["Caramel", "milkshake", 32, "assets/caramel-milkshake.jpg",
+    "Milkshake crémeux au caramel."],
+
+  ["Café", "milkshake", 32, "assets/cafe-latte.jpg",
+    "Milkshake au café, crémeux et gourmand."],
+
+  ["Oreo", "milkshake", 32, "assets/milk-shake-oreo.jpg",
+    "Milkshake Oreo avec crème et chocolat."],
+
+
+  // ==================== SMOOTHIES ====================
+
+  ["Cherry", "smoothie", 35, "assets/strawberry-juice.jpg",
+    "Smoothie fruité à la cerise."],
+
+  ["Vanille", "smoothie", 30, "assets/vanilla-milkshake.jpg",
+    "Smoothie doux à la vanille."],
+
+  ["Chocolat", "smoothie", 30, "assets/chocolate-milkshake.jpg",
+    "Smoothie gourmand au chocolat."],
+
+  ["Fraise", "smoothie", 30, "assets/strawberry-juice.jpg",
+    "Smoothie frais à la fraise."],
+
+  ["Caramel", "smoothie", 32, "assets/caramel-milkshake.jpg",
+    "Smoothie crémeux au caramel."],
+
+  ["Café", "smoothie", 32, "assets/cafe-latte.jpg",
+    "Smoothie gourmand au café."],
+
+  ["Oreo", "smoothie", 32, "assets/milk-shake-oreo.jpg",
+    "Smoothie Oreo crémeux et gourmand."],
+
+
+  // ==================== NY COOKIES ====================
+
+  ["The Original", "cookies", 13, "assets/cookie.jpg",
+    "Le cookie classique et gourmand."],
+
+  ["Diva Nutella", "cookies", 16, "assets/cookie.jpg",
+    "Cookie gourmand au Nutella."],
+
+  ["Oreo Boss", "cookies", 16, "assets/cookie.jpg",
+    "Cookie généreux aux Oreo."],
+
+  ["Lotus Cruch", "cookies", 17, "assets/cookie.jpg",
+    "Cookie croustillant au Lotus."],
+
+  ["Queen Pistachio", "cookies", 20, "assets/cookie.jpg",
+    "Cookie gourmand à la pistache."],
+
+  ["Le Roi Lion", "cookies", 17, "assets/cookie.jpg",
+    "Cookie généreux et gourmand."],
+
+  ["Coco Loco", "cookies", 17, "assets/cookie.jpg",
+    "Cookie gourmand à la noix de coco."],
+
+  ["Prince Bueno", "cookies", 17, "assets/cookie.jpg",
+    "Cookie gourmand inspiré du Kinder Bueno."],
+
+
+  // ==================== TIRAMISU ====================
+
+  ["Tiramisu Classique", "tiramisu", 30, "assets/tiramisu.jpg",
+    "Tiramisu classique au café."],
+
+  ["Tiramisu Citron", "tiramisu", 30, "assets/tiramisu.jpg",
+    "Tiramisu frais au citron."],
+
+  ["Tiramisu Framboise", "tiramisu", 30, "assets/tiramissu-fram.jpg",
+    "Tiramisu gourmand à la framboise."],
+
+  ["Tiramisu Pistache", "tiramisu", 35, "assets/cheesecake-pistachio.jpg",
+    "Tiramisu délicat à la pistache."],
+
+  ["Tiramisu Nutella", "tiramisu", 32, "assets/tiramisu.jpg",
+    "Tiramisu gourmand au Nutella."],
+
+  ["Tiramisu Caramel Beurre Salé", "tiramisu", 30, "assets/tiramisu.jpg",
+    "Tiramisu au caramel beurre salé."],
+
+
+  // ==================== CHEESECAKES ====================
+
+  ["Cheesecake Framboise", "cheesecake", 20, "assets/cheesecake-fraise.jpg",
+    "Cheesecake crémeux à la framboise."],
+
+  ["Cheesecake Mangue", "cheesecake", 20, "assets/cheesecake-mango.jpg",
+    "Cheesecake frais à la mangue."],
+
+  ["Cheesecake Lotus", "cheesecake", 20, "assets/cheesecake-lotus.jpg",
+    "Cheesecake gourmand au Lotus."],
+
+  ["Cheesecake Oreo", "cheesecake", 20, "assets/cheesecake-oreo.jpg",
+    "Cheesecake crémeux aux Oreo."],
+
+
+  // ==================== AUTRES DESSERTS ====================
+
+  ["Brownies", "dessert", 11, "assets/brownies.jpg",
+    "Brownie fondant au chocolat."],
+
+  ["Flan Caramel", "dessert", 18, "assets/flan.jpg",
+    "Flan crémeux au caramel."],
+
+  ["Three Leche", "dessert", 14, "assets/three-leche.jpg",
+    "Gâteau moelleux aux trois laits."],
+
+  ["Muffins", "dessert", 13, "assets/muffin.jpg",
+    "Muffin moelleux et gourmand."],
+
+  ["Verrines", "dessert", 15, "assets/verrine.jpg",
+    "Délicieuse verrine dessert."],
+
+
+  // ==================== GLACE ====================
+
+  ["1 Boule", "gelato", 12, "assets/gelato.jpg",
+    "Une boule de glace au choix."],
+
+  ["2 Boules", "gelato", 20, "assets/gelato.jpg",
+    "Deux boules de glace au choix."],
+
+  ["Boule supplémentaire", "gelato", 10, "assets/gelato.jpg",
+    "Une boule supplémentaire pour seulement 10 MAD."],
+
+
+  // ==================== HOT COOKIE ====================
+
+  ["Kunafa Pistache", "hotCookie", 32, "assets/cookie.jpg",
+    "Hot cookie gourmand à la pistache et au kunafa."],
+
+  ["Nutella", "hotCookie", 25, "assets/cookie.jpg",
+    "Hot cookie généreux au Nutella."],
+
+  ["Chocolat Belge", "hotCookie", 30, "assets/cookie.jpg",
+    "Hot cookie au chocolat belge."],
+
+
+  // ==================== RAIB ====================
+
+  ["Raib Nature", "raib", 5, "assets/raib.jpg",
+    "Raib nature frais et crémeux."],
+
+  ["Raib Granola Banane", "raib", 15, "assets/raib.jpg",
+    "Raib accompagné de granola et de banane."]
 ];
 
 const menuGrid = document.querySelector("#menuGrid");
